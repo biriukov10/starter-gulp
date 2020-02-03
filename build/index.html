@@ -13,7 +13,7 @@
 
 <body>
   <!-- start header nav menu -->
-  <header class="hs-header">
+  <header class="hs-header position-absolute w-100">
     <div class="hs-container">
       <nav class="navbar navbar-expand-lg navbar-light hs-header-nav">
         <a class="navbar-brand hs-logo" href="#" target="_blank">
@@ -390,8 +390,10 @@
           </fieldset>
 
           <div class="hs-contact-form-input d-flex flex-wrap">
-            <input type="text" class="hs-contact-form-input__item w-100 bg-transparent d-inline" placeholder="Имя">
-            <input type="tel" class="hs-contact-form-input__item w-100 bg-transparent d-inline" placeholder="Телефон">
+            <input type="text" pattern="[A-Za-z]{6,}" class="hs-contact-form-input__item w-100 bg-transparent d-inline"
+              placeholder="Имя">
+            <input type="tel" pattern="8-[0-9]{9}" class="hs-contact-form-input__item w-100 bg-transparent d-inline"
+              placeholder="Телефон">
             <button type="submit" class="hs-contact-form-input__btn d-inline">ОТПРАВИТЬ</button>
           </div>
         </form>
@@ -404,7 +406,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="hs-footer-social d-flex flex-column align-items-center">
-            <img src="img/logo.png" alt="Logo">
+            <a href="#"><img src="img/logo.png" alt="Logo"></a>
             <div class="hs-footer-social-icon">
               <a href="#" target="_blank" class="hs-footer-social-icon__link">
                 <img src="img/facebook.png" class="hs-footer-social-icon__img" alt="facebook">
